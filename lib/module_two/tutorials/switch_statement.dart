@@ -1,11 +1,11 @@
 void main() {
   var season = Seasons.WINTER;
   print(season);
-  
+
   print(season.index);
   print(Seasons.values);
-  
-  switch(season) {
+
+  switch (season) {
     case Seasons.SPRING:
       print("This season is sping");
       break;
@@ -18,12 +18,9 @@ void main() {
     case Seasons.WINTER:
       print("This season is winter");
       break;
+    default:
+      "This is default String";
   }
 }
 
-enum Seasons {
-  SPRING,
-  SUMMER,
-  FALL,
-  WINTER
-}
+enum Seasons { SPRING, SUMMER, FALL, WINTER }
