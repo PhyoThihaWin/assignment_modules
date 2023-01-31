@@ -1,16 +1,15 @@
 void main() {
-  Map<String, int?> amountMap = {};
-
-  amountMap["one"] = 100;
-  amountMap["two"] = null;
-  amountMap["three"] = 300;
-  amountMap["four"] = null;
-  amountMap["five"] = 500;
-  amountMap["six"] = null;
-  amountMap["seven"] = 700;
-  amountMap["eight"] = null;
+  Map<String, int?> amountMap = {
+    "one": 100,
+    "two": null,
+    "three": 300,
+    "four": null,
+    "five": 500,
+    "six": null,
+    "seven": 700,
+    "eight": null,
+  };
 
   amountMap.removeWhere((key, value) => value == null);
-
-  print(amountMap.keys.toString());
+  print(amountMap.keys.join(', '));
 }

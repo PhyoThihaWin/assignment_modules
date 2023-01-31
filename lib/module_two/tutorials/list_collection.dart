@@ -4,7 +4,7 @@
 void main() {
 
   // Fixed Length list
-  var nameList = List<String?>.filled(5, null, growable : true);
+  var nameList = List<String?>.filled(5, null);
   nameList[0] = "Maung Maung";
   nameList[1] = "Kaung Kaung";
 
